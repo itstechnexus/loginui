@@ -1,0 +1,117 @@
+///variables
+
+
+
+
+///mixins
+
+=flex
+	display: flex
+=border-box
+	box-sizing: border-box
+=centerV
+	align-items: center
+=centerH
+	justify-content: center
+
+
+
+*
+  padding: 0
+  margin: 0
+  +border-box
+  :focus
+  	outline: none
+body
+  color: #A7A7A8
+  font-family: helvetica
+  background: linear-gradient(-20deg, rgba(252, 96, 118, .95) 0%, rgba(255, 154, 68, .99) 100%) , url("../img/second.jpg")
+  width: 100vw
+  height: 100vh
+  //background-image: ;
+  //linear-gradient(-225deg, rgba(119, 66, 178,.9) 0%, rgba(241, 128, 255,.97) 52%, rgba(253, 139, 217,.9) 100%)
+  background-size: cover
+  background-repeat : no-repeat
+.form-container
+  width: 100vw
+  height : 100vh
+  +border-box
+  +flex
+  +centerV
+  +centerH
+.form-holder
+    padding: 30px 0
+    width: 30rem
+    height: 30rem
+    background: #fff
+    border-radius: 7px
+    +flex
+    +border-box
+    flex-flow: column
+    box-shadow: 0px 0px 50px  5px rgba(0,0,0,0.3)
+
+.title
+    padding: 0 30px
+    width: 100%
+    height: 40px
+    border-left: 5px solid rgba(255, 154, 68, 1)
+    h2
+      font-size: 30px
+      font-weight: 100
+.placer
+	width: 100%
+	margin-top: 50px
+	+flex
+	+centerH
+	+centerV
+	flex-flow: column
+	.form-group
+	  +flex
+	  +centerH
+	  +centerV
+	  border-radius: 50px
+	  flex-flow: column
+	  box-shadow: 0px 0px 50px  5px rgba(0,0,0,0.1)
+	  margin-top: 30px
+.btn, .inp-form
+  +border-box
+  border-radius: 50px
+  +flex
+  width: 28em
+  height: 60px
+  padding: 0 10px
+  border: none
+  transition: all 1s cubic-bezier(0, 0.8, 0.11, 1.01) 
+.inp-form
+	padding-left: 30px
+	color: grey
+.inp-form[type='password']
+	background: #dfdfdf
+.inp-form:focus
+   //background: #dfdfdf
+   outline: none
+.btn-group
+	margin-top: 80px
+	
+	.btn
+	  +centerV
+	  border-radius: 50px
+	  +centerH
+	  border: 2px solid #fc6076
+	  background: #fff
+	  color: #fc6076
+.btn:focus
+	outline: none
+.btn:hover
+  cursor: pointer
+  background: #fc6076
+  color: #fff
+  transition: all 1s cubic-bezier(0, 0.8, 0.11, 1.01) 
+  box-shadow: 0px 20px 50px  5px rgba(0,0,0,0.19)
+  transform: translateY(-10px)
+
+
+
+  
+
+
